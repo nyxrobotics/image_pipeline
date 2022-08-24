@@ -719,7 +719,7 @@ class StereoDrawable(ImageDrawable):
         self.dim = -1
 
 
-class MonoCalibrator(Calibrator):
+class MonoCalibrator(Calibrator, object):
     """
     Calibration class for monocular cameras::
 
@@ -1052,7 +1052,7 @@ class MonoCalibrator(Calibrator):
         self.cal(limages)
 
 # TODO Replicate MonoCalibrator improvements in stereo
-class StereoCalibrator(Calibrator):
+class StereoCalibrator(Calibrator, object):
     """
     Calibration class for stereo cameras::
 
